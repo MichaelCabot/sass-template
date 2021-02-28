@@ -1,0 +1,42 @@
+/*
+    SASS Template
+    -------------------------------------------------------------------
+    Author:    Michael Cabot <cabotmichael@gmail.com>
+    Project:   https://github.com/RaekwonDaChef/sass-template
+    License:   https://www.gnu.org/licenses/gpl-3.0.txt GNU General Public License 3
+*/
+
+/*
+    Usage: @include prefix(animation, rotate(42deg), webkit ms);
+*/
+@mixin prefix($property, $value, $vendors: webkit moz ms o) {
+    @if $vendors {
+        @each $vendor in $vendors {
+            #{"-" + $vendor + "-" + $property}: #{$value};
+        }
+    }
+    #{$property}: #{$value};
+}
+
+@mixin keyframes($name) { // adds vendor prefix's to animations
+    @-webkit-keyframes #{$name} {
+        @content; 
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+/*
+    Usage: @include sizeWH(100%); and @include sizeWH(50px, 50px);
+*/
+@mixin sizeWH($width, $height: $width) {
+    width: $width;
+    height: $height;
+}

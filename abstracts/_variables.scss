@@ -1,0 +1,42 @@
+/*
+    SASS Template
+    -------------------------------------------------------------------
+    Author:    Michael Cabot <cabotmichael@gmail.com>
+    Project:   https://github.com/RaekwonDaChef/sass-template
+    License:   https://www.gnu.org/licenses/gpl-3.0.txt GNU General Public License 3
+*/
+
+$enable-gradients:            true;
+$enable-rounded:              true;
+$enable-shadows:              true;
+$body-bg:                     #ebf1fa;
+$navbar-padding-y:            15px;
+
+/*****************************/
+$primary: #8892BF; // php purple
+/*****************************/
+// custom:
+$php-blue: #369;
+/*****************************/
+/* bootstrap default values: */
+/*****************************/
+$secondary: #6c757d;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #212529;
+/*****************************/
+
+$theme-colors: (
+    primary: $primary,
+    secondary: $secondary,
+    success: $success,
+    info: $info,
+    warning: $warning,
+    danger: $danger,
+    light: $light,
+    dark: $dark,
+    php-blue: #369,
+);
