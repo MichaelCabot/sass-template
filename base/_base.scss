@@ -6,15 +6,12 @@
     License:   https://www.gnu.org/licenses/gpl-3.0.txt GNU General Public License 3
 */
 
-@charset "utf-8";
+html {
+    box-sizing: border-box;
+}
 
-@import "abstracts/mixins";
-@import "abstracts/variables";
-
-@import "vendors/normalize";
-@import "vendors/bootstrap";
-
-@import "base/base";
-@import "base/animations";
-@import "base/fonts";
-@import "base/icons";
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
