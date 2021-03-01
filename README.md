@@ -1,14 +1,16 @@
 # sass-template
 
 > **Author:** Michael Cabot (`cabotmichael@gmail.com`)
+
 > **License:** GPL v3.0 `See LICENSE.md.`
-> 
+
 SASS template for website design projects. Uses 7-1 pattern/architecture and includes bootstrap v5 source.
 
 Found myself using the same mixins, variables, dependencies (bootstrap)  in multiple SASS projects so I created this template to start off all of my SASS projects.
 
-**Bootstrap:** https://github.com/twbs/bootstrap 	[MIT License}
-**Normalize** https://github.com/necolas/normalize.css [MIT License}
+**Bootstrap:** https://github.com/twbs/bootstrap 	[MIT License]
+
+**Normalize:** https://github.com/necolas/normalize.css [MIT License]
 
 ## Structure
 ```
